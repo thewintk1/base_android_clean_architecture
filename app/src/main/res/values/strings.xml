@@ -1,0 +1,17 @@
+<resources>
+    <string name="app_name">base_clean_architecture</string>
+    <string name="exception_network">The network error occurred. Please try again later.</string>
+    <string name="error_something_went_wrong">Something went wrong.</string>
+
+    <string name="bottom_navigation_menu_item_1_title">Home</string>
+    <string name="bottom_navigation_menu_item_2_title">Tab 1</string>
+    <string name="bottom_navigation_menu_item_3_title">Tab 2</string>
+    <string name="bottom_navigation_menu_item_4_title">Tab 3</string>
+
+    <string name="exception_no_network">Please check your network connection.</string>
+    <string name="exception_unknownhost">Unable to locate the server.</string>
+    <string name="exception_connect_timeout">Unable to connect to the server.</string>
+    <string name="exception_socket_timeout">The connection has timed out.</string>
+    <string name="exception_socket">There are some problems with the connection.</string>
+    <string name="exception_ssl_handshake">Your connection is not secure.</string>
+</resources>
