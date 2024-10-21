@@ -65,7 +65,7 @@ abstract class BaseFragment<VB : ViewBinding, VM : BaseViewModel>(
 
             launch {
                 viewModel.progressFlow.collectLatest {
-                    Timber.tag("###BaseProject").d("isLoading: $it")
+                    Timber.tag("###BaseProject").d("${Thread.currentThread().name} isLoading: $it")
                     showProgress(it)
                 }
             }

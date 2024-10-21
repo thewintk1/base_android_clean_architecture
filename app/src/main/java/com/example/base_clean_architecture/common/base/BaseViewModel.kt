@@ -44,8 +44,10 @@ abstract class BaseViewModel : ViewModel() {
         }
     }
 
-    suspend fun emitError(error: DomainError) {
-        _errorsFlow.emit(error)
+    fun emitError(error: DomainError) {
+        viewModelScope.launch {
+            _errorsFlow.emit(error)
+        }
     }
 
     fun emitLoadingState(isLoading: Boolean) {
