@@ -103,8 +103,7 @@ class HomeFragment : BaseFragment<FragmentHomeBinding, HomeViewModel>(FragmentHo
                 .observe(viewLifecycleOwner) {
                     binding?.tvResult?.text = it.state.name
                     if (it.state.isFinished) {
-                        val data = it.outputData
-                        val message = data.getString(UploadWorker.KEY_WORKER)
+                        val message = it.outputData.getString(UploadWorker.KEY_WORKER)
                         Toast.makeText(context, message.toString(), Toast.LENGTH_LONG).show()
                     }
                 }
