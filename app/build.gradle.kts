@@ -5,11 +5,11 @@ plugins {
     alias(libs.plugins.jetbrainsKotlinAndroid)
     alias(libs.plugins.daggerHiltAndroid)
     alias(libs.plugins.navigationSafeArgs)
-    alias(libs.plugins.ktlint)
+//    alias(libs.plugins.ktlint)
     id("kotlin-kapt")
 }
 
-apply(plugin = "org.jlleitschuh.gradle.ktlint")
+//apply(plugin = "org.jlleitschuh.gradle.ktlint")
 
 val localProperties = Properties().apply {
     val file = rootProject.file("${rootProject.projectDir.path}/local.properties")

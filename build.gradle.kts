@@ -4,7 +4,7 @@ plugins {
     alias(libs.plugins.jetbrainsKotlinAndroid) apply false
     alias(libs.plugins.daggerHiltAndroid) apply false
     alias(libs.plugins.navigationSafeArgs)  apply false
-    alias(libs.plugins.ktlint)  apply false
+//    alias(libs.plugins.ktlint)  apply false
 }
 
 
